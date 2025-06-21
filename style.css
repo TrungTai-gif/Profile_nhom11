@@ -1,0 +1,247 @@
+:root {
+  --mau-chu-dao: #00bfff; /* xanh dương neon */
+  --mau-phu: #ff4081;     /* hồng neon tạo điểm nhấn */
+  --mau-nen: #0d1117;     /* nền tối hiện đại */
+  --mau-chu: #e0e0e0;     /* chữ sáng dễ đọc */
+  --font-chu: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-chu);
+  font-size: 18px;
+  background-color: var(--mau-nen);
+  color: var(--mau-chu);
+}
+
+
+#hieu-ung-nen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.thanh-dieu-huong {
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  background: rgba(0, 20, 40, 0.85);
+  backdrop-filter: blur(8px); 
+  box-shadow: 0 2px 10px rgba(0, 191, 255, 0.2);
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.thanh-dieu-huong ul {
+  display: flex;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.thanh-dieu-huong ul li {
+  margin: 0 20px;
+}
+
+.thanh-dieu-huong ul li a {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+}
+
+.thanh-dieu-huong ul li a:hover {
+  color: var(--mau-phu);
+}
+
+.trang-chu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 50px;
+}
+
+.noi-dung-trang-chu {
+  max-width: 65%;
+}
+
+
+.trang-chu h1 {
+  font-size: 60px;
+  color: var(--mau-chu-dao);
+  margin-bottom:0;
+}
+
+.trang-chu p {
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.nut-chinh {
+  padding: 10px 20px;
+  background-color: var(--mau-phu);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 0 10px var(--mau-phu);
+  font-size: 18px;
+}
+
+.nut-chinh:hover {
+  background-color: var(--mau-chu-dao);
+  box-shadow: 0 0 15px var(--mau-chu-dao);
+}
+
+
+.hinh-anh-trang-chu {
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.4);
+  object-fit: cover;
+}
+
+.ve-chung-toi, .dich-vu, .doi-ngu, .lien-he {
+  padding: 50px;
+  text-align: center;
+}
+
+.luoi-ve-chung-toi, .luoi-dich-vu, .luoi-doi-ngu {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.the-ve-chung-toi, .the-dich-vu, .thanh-vien-doi-ngu {
+  background-color: #1c1f26;
+  color: var(--mau-chu);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 191, 255, 0.2);
+  border: 1px solid rgba(0, 191, 255, 0.3);
+}
+
+.thanh-vien-doi-ngu {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thanh-vien-doi-ngu img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--mau-chu-dao);
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.thanh-vien-doi-ngu:hover, .the-ve-chung-toi:hover, .the-dich-vu:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 191, 255, 0.4);
+}
+
+.thanh-vien-doi-ngu h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: var(--mau-chu-dao);
+}
+
+.thanh-vien-doi-ngu p {
+  font-size: 16px;
+  margin: 0;
+  color: #aaa;
+}
+
+.chan-trang {
+  background-color: rgba(0, 20, 40, 0.95);
+  color: #ccc;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  border-top: 1px solid rgba(0, 191, 255, 0.2);
+}
+
+.an {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.hien-thi {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.trang-chu h1,
+.ve-chung-toi h2,
+.dich-vu h2,
+.doi-ngu h2,
+.lien-he h2 {
+  color: var(--mau-chu-dao);
+  text-shadow: 0 0 10px var(--mau-chu-dao);
+}
+
+.ve-chung-toi p,
+.dich-vu p,
+.doi-ngu p,
+.lien-he p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#tieu-de-nhom {
+  font-size: 60px;
+  font-weight: 700;
+  color: var(--mau-chu-dao);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.nhap-nhay {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+

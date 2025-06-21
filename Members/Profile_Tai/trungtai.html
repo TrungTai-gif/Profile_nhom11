@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title> Trung-Tài</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; background: #333; ">
+          <li style="position: relative;">
+              <a href="/index.html" style="color: white; text-decoration: none; padding: 10px 15px; display: block;">Trang Chủ</a>
+          </li>
+          <li style="position: relative;">
+              <a href="#gioithieu" style="color: white; text-decoration: none; padding: 10px 15px; display: block;">Giới Thiệu</a>
+          </li>
+          <li style="position: relative;">
+              <a href="#duan" style="color: white; text-decoration: none; padding: 10px 15px; display: block;">Dự án</a>
+          </li>
+          <li style="position: relative;">
+              <a href="#lienhe" style="color: white; text-decoration: none; padding: 10px 15px; display: block;">Liên Hệ</a>
+          </li>
+          <li class="cv-menu" style="position: relative;">
+            <a href="#" onclick="toggleCVMenu(event)" 
+               style="color: white; text-decoration: none; padding: 10px 15px; display: block;">
+                CV ▾
+            </a>
+            <ul id="cv-dropdown" 
+                style="display: none; position: absolute; background: white; top: 100%; left: 0; min-width: 150px; 
+                       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); padding: 0; margin: 0; list-style: none;">
+                <li>
+                    <a href="#skills" 
+                       style="color: black; padding: 8px 10px; display: block; text-decoration: none;">
+                        🧠 Kỹ Năng
+                    </a>
+                </li>
+                <li>
+                    <a href="#sothich" 
+                       style="color: black; padding: 8px 10px; display: block; text-decoration: none;">
+                        🎵 Sở Thích
+                    </a>
+                </li>
+                <li>
+                    <a href="#chungchi" 
+                       style="color: black; padding: 8px 10px; display: block; text-decoration: none;">
+                        🏆 Thành Tích
+                    </a>
+                </li>
+            </ul>
+        </li>
+          <li class="language-menu" style="position: relative;">
+              <a href="#" onclick="toggleLanguageMenu(event)" 
+                 style="color: white; text-decoration: none; padding: 10px 15px; display: block;">
+                  Ngôn ngữ ▾
+              </a>
+              <ul id="language-dropdown" 
+                  style="display: none; position: absolute; background: white; top: 100%; left: 0; min-width: 120px; 
+                         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); padding: 0; margin: 0; list-style: none;">
+                  <li>
+                      <a href="#" onclick="changeLanguage('vi')" 
+                         style="color: black; padding: 8px 10px; display: block; text-decoration: none;">
+                          🇻🇳 Tiếng Việt
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" onclick="changeLanguage('en')" 
+                         style="color: black; padding: 8px 10px; display: block; text-decoration: none;">
+                          🇬🇧 English
+                      </a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- <div class="background"></div> -->
+
+      <div class="video-background">
+        <video autoplay loop muted playsinline>
+            <source src="asset/images/bg.mp4" type="video/mp4" /> 
+        </video>
+    </div>
+
+      <div class="container">
+        <div class="profile-image fade-in">
+          <img src="asset/images/anhCN.jpg" alt="NGUYỄN TRUNG TÀI" />
+        </div>
+        <div class="info">
+          <div class="typing-container">
+            <p style="color: white">Xin chào! Tôi là</p>
+            <h1 id="typing-name"></h1>
+            <h2 id="typing-title"></h2>
+          </div>
+
+          <div class="social-container">
+            <a
+              href="https://www.linkedin.com/in/tài-nguyễn-trung-41259236b"
+              target="_blank"
+              class="social-btn linkedin"
+            >
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a
+              href="https://www.tiktok.com/@tai_1982005?is_from_webapp=1&sender_device=pc"
+              target="_blank"
+              class="social-btn tiktok"
+            >
+              <i class="fab fa-tiktok"></i> TikTok
+            </a>
+            <a
+              href="https://github.com/TrungTai-gif"
+              class="social-btn github"
+            >
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+          <div class="buttons">
+            <a href="#gioithieu" class="btn-outline">Giới thiệu</a>
+            <a href="#skills" class="btn-solid">Xem CV</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+<!-- GIỚI THIỆU -->
+<section id="gioithieu" class="about">
+  <h3 class="sub-title">Giới Thiệu</h3>
+  <h2 class="title">Về Tôi</h2>
+  <div class="content">
+      <div class="info">
+          <div class="stats">
+              <div class="stat">
+                  <img src="asset/images/icon1.avif" alt="icon" />
+                  <p style="color: aliceblue">Kinh Nghiệm</p>
+                  <span>2+ năm trong phát triển Web</span>
+              </div>
+              <div class="stat">
+                  <img src="asset/images/icon2.avif" alt="icon" />
+                  <p style="color: aliceblue">Dự Án Hoàn Thành</p>
+                  <span>10+ Dự Án</span>
+              </div>
+              <div class="stat">
+                  <img src="asset/images/icon3.avif" alt="icon" />
+                  <p style="color: aliceblue">Hỗ Trợ</p>
+                  <span>24/7 - Luôn Sẵn Sàng</span>
+              </div>
+          </div>
+
+          <p class="description">
+              <strong>🎓 Học vấn:</strong> Trường đại học giao thông vận tải TP.HCM  
+          </p>
+          <p class="description">
+              <strong>💻 Chuyên ngành:</strong> Công Nghệ Thông Tin  
+          </p>
+          <p class="description">
+              <strong>📍 Địa điểm:</strong> TP. Hồ Chí Minh
+          </p>
+          <hr>
+
+          <h3 style="color: white">✨ Giới Thiệu Bản Thân</h3>
+          <p class="description">
+              Xin chào! Tôi là một lập trình viên Web đầy nhiệt huyết với niềm đam mê sáng tạo và phát triển các giải pháp công nghệ. Với kinh nghiệm thực chiến trong lập trình Frontend & Backend, tôi luôn tìm kiếm cơ hội để áp dụng và nâng cao kỹ năng của mình trong môi trường chuyên nghiệp.
+          </p>
+
+        
+
+          <h3 style="color: white">🎯 Mục Tiêu Nghề Nghiệp</h3>
+          <p class="description">
+              Tôi mong muốn được gia nhập một công ty công nghệ năng động, nơi tôi có thể vận dụng kiến thức và kinh nghiệm của mình để phát triển các sản phẩm chất lượng. Đồng thời, không ngừng học hỏi, nâng cao kỹ năng để trở thành một chuyên gia trong lĩnh vực lập trình Web.
+          </p>
+
+          <a href="#lienhe" class="btn">📩 Liên Hệ Ngay</a>
+      </div>
+
+      <div class="image fade-in">
+          <img src="asset/images/anhCN.jpg" alt="Ảnh cá nhân" />
+      </div>
+  </div>
+</section>
+
+
+      <!-- DỰ ÁN GẦN ĐÂY -->
+    <section id="duan" class="recent-projects">
+      <h3 class="sub-title">Dự Án</h3>
+      <h2 class="title">Dự Án Gần Đây</h2>
+
+      <div class="project-container">
+        <div class="project fade-in">
+          <img src="asset/images/DA1.png" alt="Dự án 1" />
+          <div class="overlay">
+            <h3>phần mềm đặt vé xe </h3>
+            <p>
+              Thiết kế website phần mềm đặt vé xe online với giao diện thân thiện (FullStack).
+            </p>
+            <a href="#">Xem Chi Tiết</a>
+          </div>
+        </div>
+
+        <div class="project fade-in">
+          <img src="asset/images/DA4.png" alt="Dự án 2" />
+          <div class="overlay">
+            <h3>Website bán Cafe</h3>
+            <p>Thiết kế website bán cafe với giao diện thân thiện. sử dụng javacript (Strapi) (FullStack).</p>
+            <a href="#">Xem Chi Tiết</a>
+          </div>
+        </div>
+
+        <div class="project fade-in">
+          <img src="asset/images/DA2.png" alt="Dự án 3" />
+          <div class="overlay">
+            <h3>Website bán giày </h3>
+            <p>Thiết kế website bán giày Snacker với giao diện thân thiện dễ sử dụng ( Ngôn ngữ php FullStack).</p>
+            <a href="#">Xem Chi Tiết</a>
+          </div>
+        </div>
+        <div class="project fade-in">
+          <img src="asset/images/DA3.png" alt="Dự án 3" />
+          <div class="overlay">
+            <h3>Website Bán Smartphone</h3>
+            <p>Thiết kế website bán Smartphone với giao diện thân thiện dễ sử dụng (Laravel FullStack).</p>
+            <a href="#">Xem Chi Tiết</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <a href="#" class="btn">Xem Thêm</a>
+      </div>
+    </section>
+
+    <div id="lienhe" class="contact-container">
+      <h3 class="sub-title">Liên hệ</h3>
+      <h2 class="title">VỚI TÔI</h2>
+      <div class="contact-content">
+        <div class="contact-image fade-in">
+          <img src="asset/images/LIENHE.avif" alt="Liên hệ" />
+        </div>
+        <div class="contact-form">
+          <form action="#">
+            <label for="name">Họ Tên*</label>
+            <input type="text" id="name" placeholder="Trung Tai" />
+            <label for="email">Email*</label>
+            <input type="email" id="email" placeholder="mail@trungtai.com" />
+            <label for="message">Tin nhắn*</label>
+            <textarea
+              id="message"
+              placeholder="Bạn đang cần hỗ trợ gì?"
+              rows="4"
+            ></textarea>
+            <button type="submit">Gửi Ngay</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+      <!-- KỸ NĂNG SKILL -->
+    <h3 class="sub-title">Kỹ Năng</h3>
+    <h2 class="title">KỸ NĂNG CỦA TÔI</h2>
+    <section id="skills" class="recent-projects">
+      <h2 class="section-title">Kỹ Năng Chuyên Môn</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <i class="fas fa-code"></i>
+          <h3 style="color: white">Lập Trình Web</h3>
+          <p>Chuyên về HTML, CSS, JavaScript, PHP, Laravel...</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-paint-brush"></i>
+          <h3 style="color: white">Thiết Kế UI/UX</h3>
+          <p>Sử dụng Figma, Adobe XD, tối ưu trải nghiệm người dùng.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-database"></i>
+          <h3 style="color: white">Quản Lý Database</h3>
+          <p>MySQL, PostgreSQL, MongoDB, tối ưu truy vấn dữ liệu.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-github"></i>
+          <h3 style="color: white">GitHub</h3>
+          <p>Quản lý mã nguồn, làm việc nhóm và phát triển dự án hiệu quả trên GitHub.</p>
+      </div>
+      
+        <div class="skill-card">
+          <i class="fas fa-server"></i>
+          <h3 style="color: white">Backend Development</h3>
+          <p>Laravel, Node.js, API, tối ưu hiệu suất và bảo mật.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-users"></i>
+          <h3 style="color: white">Kỹ năng làm việc nhóm</h3>
+          <p>Khả năng phối hợp hiệu quả, giao tiếp và làm việc nhóm để đạt mục tiêu chung.</p>
+      </div>
+      
+      </div>
+    </section>
+    
+    <!--SỞ THÍCH-->
+    <section id="sothich" class="about hobby-section">
+      <h3 class="sub-title">Sở Thích</h3>
+      <h2 class="title">Tôi Yêu Thích</h2>
+      <div class="hobby-container">
+        <div class="hobby-card">
+          <i class="fas fa-book-open hobby-icon yellow"></i>
+          <h3>Đọc sách</h3>
+          <p>Yêu thích sách công nghệ, phát triển bản thân và tiểu thuyết trinh thám.</p>
+        </div>
+        <div class="hobby-card">
+          <i class="fas fa-headphones-alt hobby-icon pink"></i>
+          <h3>Nghe nhạc</h3>
+          <p>Thường nghe Lofi và Chillhop để tập trung làm việc hoặc thư giãn.</p>
+        </div>
+        <div class="hobby-card">
+          <i class="fas fa-futbol hobby-icon green"></i>
+          <h3>Đá bóng</h3>
+          <p>Tham gia CLB thể thao để duy trì sức khoẻ và giao lưu bạn bè.</p>
+        </div>
+        <div class="hobby-card">
+          <i class="fas fa-plane-departure hobby-icon cyan"></i>
+          <h3>Du lịch</h3>
+          <p>Yêu thích khám phá địa điểm mới và trải nghiệm văn hóa vùng miền.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- CHỨNG CHỈ / GIẢI THƯỞNG -->
+    <section id="chungchi" class="recent-projects">
+      <h3 class="sub-title">Chứng Chỉ & Giải Thưởng</h3>
+      <h2 class="title">Thành Tích Của Tôi</h2>
+      <div class="skills-container">
+        <div class="skill-card visible">
+          <i class="fas fa-certificate"></i>
+          <h3 style="color: white">Chứng chỉ HTML/CSS</h3>
+          <p>Được cấp bởi FreeCodeCamp (2023)</p>
+        </div>
+        <div class="skill-card visible">
+          <i class="fas fa-award"></i>
+          <h3 style="color: white">Top 3 Web Hackathon</h3>
+          <p>Sự kiện UIT DevDay 2024</p>
+        </div>
+        <div class="skill-card visible">
+          <i class="fas fa-user-graduate"></i>
+          <h3 style="color: white">TOEIC 750+</h3>
+          <p>Kỹ năng đọc và nghe tiếng Anh</p>
+        </div>
+      </div>
+    </section>
+    
+      <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h3>Về Tôi</h3>
+            <p>
+              Tôi là Nguyễn Trung Tài, một lập trình viên web với đam mê
+              sáng tạo và công nghệ.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h3>Liên Kết</h3>
+            
+          </div>
+          <div class="footer-col">
+            <h3>Theo Dõi Tôi</h3>
+            <div class="social-container">
+              <a
+                href="https://www.linkedin.com/in/tài-nguyễn-trung-41259236b"
+                target="_blank"
+                class="social-btn linkedin"
+              >
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+              <a
+                href="https://www.tiktok.com/@tai_1982005?is_from_webapp=1&sender_device=pc"
+                target="_blank"
+                class="social-btn tiktok"
+              >
+                <i class="fab fa-tiktok"></i> TikTok
+              </a>
+              <a
+                href="https://github.com/TrungTai-gif"
+                target="_blank"
+                class="social-btn github"
+              >
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Nguyễn Trung Tài. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <audio id="mymusic" src="asset/images/mp3/Muon Roi Ma Sao Con - Son Tung M-TP.mp3" autoplay muted loop></audio>
+    <script src="javacript/index.js"></script>
+  </body>
+</html>

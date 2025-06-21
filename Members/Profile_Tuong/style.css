@@ -1,0 +1,194 @@
+:root {
+  --main-font-size: 8px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(/Members/Profile_Tuong/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #333;
+  font-size: var(--main-font-size);
+}
+
+.container {
+  width: 65%;
+  margin: 30px auto;
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  background: #d6ecff;
+  padding: 40px 20px;
+  border-radius: 8px;
+}
+
+header h1 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 8px;
+}
+
+nav {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav a {
+  padding: 4px 10px;
+  color: #1d68a7;
+  background: #eef6fb;
+  text-decoration: none;
+  font-size: 8px;
+  border-radius: 20px;
+  white-space: nowrap;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: #d0ebff;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 10px 0;
+}
+
+.info-box {
+  flex: 1 1 48%;
+  max-width: 48%;
+  background: #f5faff;
+  padding: 16px;
+  border-radius: 8px;
+  color: #000;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.career-content {
+  flex: 1 1 48%;
+  max-width: 48%;
+  background: transparent;    
+  padding: 0px;             
+  border-radius: 5px;         
+  color: #000;
+  box-shadow: none;         
+}
+
+.avatar {
+  width: 100px;
+  height: 130px;
+  border-radius: 4px;
+  object-fit: cover;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.section-title {
+  color: #1d68a7;
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 9px;
+}
+
+.info-list p,
+.career-content p {
+  text-align: left;
+  font-size: 8px;
+  margin: 6px 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.career-content img {
+  margin-top: 10px;
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.right section {
+  margin-bottom: 20px;
+}
+
+.badge {
+  display: inline-block;
+  background: #cce5ff;
+  color: #004085;
+  padding: 3px 6px;
+  margin: 2px;
+  border-radius: 16px;
+  font-size: 7px;
+}
+
+.badge i {
+  margin-right: 4px;
+  font-size: 8px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.social-icons .fa-facebook-square {
+  color: #3b5998;
+}
+
+.social-icons .fa-tiktok {
+  color: #010101; 
+}
+
+.social-icons .fa-github {
+  color: #000;
+}
+
+.social-icons a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .top-section {
+    flex-direction: column;
+  }
+  .info-box,
+  .career-content {
+    max-width: 100%;
+  }
+}
+.badge .fa-gamepad    { color: #4CAF50; }  
+.badge .fa-headphones { color: #FF5722; }  
+.badge .fa-tv         { color: #3F51B5; }  
+.badge .fa-music      { color: #9C27B0; }  
+
+.fa-html5    { color: #E44D26; }
+.fa-css3-alt  { color: #1572B6; }
+.fa-js-square { color: #F7DF1E; }
+.fa-react     { color: #61DBFB; }
+.fa-node-js   { color: #3C873A; }
+.fa-git-alt   { color: #F1502F; }
+.fa-github    { color: #181717; }
+
+.social-icons .fa-facebook-square { color: #3b5998; }
+.social-icons .fa-instagram       { color: #e1306c; }
+.social-icons .fa-github          { color: #181717; }
