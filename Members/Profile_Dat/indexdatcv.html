@@ -1,185 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/style1.css" />
-  </head>
-  <body>
-    <div class="home_banner">
-      <div class="overlay">
-        <div class="banner_text">
-          <h1>My Portfolio</h1>
-          <!-- Tiêu đề chính của trang -->
-        </div>
-      </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="cssdat/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="scriptdat.js" defer></script>
+</head>
+
+<body>
+    <div class="video-background">
+        <video autoplay loop muted playsinline>
+            <source src="images/bg.mp4" type="video/mp4" /> 
+        </video>
     </div>
     <header>
-      <a href="#" class="logo">Bùi<span>Thành Đạt</span></a>
-
-      <nav class="navbar">
-        <a href="#home">Trang chủ</a>
-        <a href="#about_me">Thông tin</a>
-        <a href="#career_goals">Mục tiêu</a>
-        <a href="#interests">Sở thích</a>
-        <a href="#skills">Kỹ năng</a>
-        <a href="#projects">Dự án</a>
-        <a href="#certificates">Chứng chỉ và giải thưởng</a>
-        <a href="#contact">Liên hệ</a>
-      </nav>
-
-      <div class="menu-toggle">
-        <i class="fas fa-bars"></i>
-      </div>
-    </header>
-    <div class="about_section">
-      <div class="about_content">
-        <div class="about_text" id="about_me">
-          <h3>Thông tin cá nhân</h3>
-          <div class="about_me_row">
-            <div class="about_me_image">
-              <img
-                src="assets/img/img.jpg"
-                alt="My Photo"
-              />
-              <!-- Hình ảnh cá nhân -->
+        <nav class="menu">
+          <ul>
+            <li><a href="#trangchu">Trang Chủ</a></li>
+            <li><a href="#gt">Giới Thiệu</a></li>
+            <li><a href="#kynang">Kỹ Năng</a></li>
+            <li><a href="#thanhtich">Thành Tích</a></li>
+            <li><a href="#sothich">Sở Thích</a></li>
+            <li><a href="#duan">Dự Án</a></li>
+            <li><a href="#lienhe">Liên Hệ</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="trangchu" class="trangchu">
+        <div class="anh">
+            <img src="images/img.jpg" alt="Avatar">
+        </div>
+        <div id="gt" class="gioithieu">
+            <h1>Bùi Thành Đạt</h1>
+            <h2><span class="typing"></span></h2>
+            <p>Xin chào! Tôi là Bùi Thành Đạt – sinh viên năm 3 ngành Công nghệ Thông tin tại Trường đại học Giao
+                thông vận tải TP.HCM.
+                Tôi yêu thích lập trình web, thiết kế giao diện người dùng và luôn tìm kiếm cơ hội để học hỏi, phát
+                triển bản thân. Ngoài giờ học, tôi thường làm dự án cá nhân, tham gia cuộc thi học thuật và đọc sách về
+                tư duy logic.</p>
+            <h2>Một số thông tin về tôi</h2>
+            <ul class="ttcanhan">
+                <li><i class="fa fa-map-marker-alt"></i> TP.HCM, Việt Nam</li>
+                <li><i class="fa fa-graduation-cap"></i> Trường ĐH GTVT TP.HCM</li>
+                <li><i class="fa fa-phone"></i> 0343 013 473</li>
+                <li><i class="fa fa-envelope"></i> datbuithanh1711@gamil.com</li>
+            </ul>
+            <h2>Mục tiêu nghề nghiệp</h2>
+            <p>Tôi mong muốn được gia nhập một công ty công nghệ năng động, nơi tôi có thể vận dụng kiến thức và kinh nghiệm của mình để phát triển các sản phẩm chất lượng. Đồng thời, không ngừng học hỏi, nâng cao kỹ năng để trở thành một chuyên gia trong lĩnh vực lập trình Web.</p>
+            <div class="social">
+                <a href="https://www.facebook.com/dat.buithanh.355/?locale=vi_VN"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://github.com/Datbui1711"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/thanhdatt1705/"><i class="fab fa-instagram"></i></a>
             </div>
-            <div class="about_me_content">
-              <p>
-                Họ và tên: Bùi Thành Đạt<br />
-                Ngày sinh: 17/11/2005<br />
-                Địa chỉ: 64 Hoàng Dư Khương, phường 12, quận 10, thành phố Hồ
-                Chí Minh<br />
-                Gmail: datbuithanh1711@gmail.com<br />
-                Hiện tại đang là sinh viên năm 2 trường đại học Giao Thông Vận
-                Tải Hồ Chí Minh. Là sinh viên ngành công nghệ thông tin thuộc
-                khoá K23.
-              </p>
+        </div>
+    </section>
+    <section id="kynang" class="phan kynang an">
+        <h2 class="tieude">KỸ NĂNG</h2>
+
+        <div class="kynang-container">
+            <div class="cot">
+                <h3>Kỹ năng lập trình</h3>
+                <div class="ky">
+                    <i class="fab fa-html5"></i> HTML
+                    <div class="thanh">
+                        <div class="tien" style="width: 90%">90%</div>
+                    </div>
+                </div>
+                <div class="ky">
+                    <i class="fab fa-css3-alt"></i> CSS
+                    <div class="thanh">
+                        <div class="tien" style="width: 85%">85%</div>
+                    </div>
+                </div>
+                <div class="ky">
+                    <i class="fab fa-js"></i> JavaScript
+                    <div class="thanh">
+                        <div class="tien" style="width: 75%">75%</div>
+                    </div>
+                </div>
+                <div class="ky">
+                    <i class="fab fa-git-alt"></i> Git
+                    <div class="thanh">
+                        <div class="tien" style="width: 70%">70%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cot">
+                <h3>Kỹ năng mềm</h3>
+                <div class="ky">
+                    <i class="fa fa-comments"></i> Giao tiếp
+                    <div class="thanh">
+                        <div class="tien" style="width: 80%">80%</div>
+                    </div>
+                </div>
+                <div class="ky">
+                    <i class="fa fa-users"></i> Làm việc nhóm
+                    <div class="thanh">
+                        <div class="tien" style="width: 85%">85%</div>
+                    </div>
+                </div>
+                <div class="ky">
+                    <i class="fa fa-lightbulb"></i> Giải quyết vấn đề
+                    <div class="thanh">
+                        <div class="tien" style="width: 75%">75%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="thanhtich" class="phan thanhtich an">
+        <h2 class="tieude">THÀNH TÍCH</h2>
+
+        <div class="danh-sach-thanhtich">
+            <div class="card-thanhtich">
+                <i class="fas fa-award"></i>
+                <h3>Giải Nhì cuộc thi Lập trình Web</h3>
+                <p>Đạt giải Nhì tại cuộc thi Web Design cấp khoa năm 2024, với dự án "Trang web đặt vé xe khách".</p>
+                <span class="nam">2024</span>
+            </div>
+
+            <div class="card-thanhtich">
+                <i class="fas fa-certificate"></i>
+                <h3>Chứng chỉ Google UX Design</h3>
+                <p>Hoàn thành khóa học UX/UI trên Coursera do Google tổ chức.</p>
+                <span class="nam">2023</span>
+            </div>
+
+            <div class="card-thanhtich">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Top 10 ý tưởng Startup sinh viên</h3>
+                <p>Ý tưởng "Ứng dụng quản lý học tập cá nhân" lọt top 10 cuộc thi Sinh viên sáng tạo TP.HCM.</p>
+                <span class="nam">2023</span>
+            </div>
+        </div>
+    </section>
+    <section id="sothich" class="phan sothich an">
+        <h2 class="tieude">SỞ THÍCH</h2>
+        <div class="luoi-sothich">
+          <div class="muc-sothich coding">
+            <i class="fas fa-code"></i>
+            <p>Lập trình</p>
+          </div>
+          <div class="muc-sothich game">
+            <i class="fas fa-gamepad"></i>
+            <p>Chơi game</p>
+          </div>
+          <div class="muc-sothich book">
+            <i class="fas fa-book"></i>
+            <p>Đọc sách</p>
+          </div>
+          <div class="muc-sothich music">
+            <i class="fas fa-headphones-alt"></i>
+            <p>Nghe nhạc</p>
+          </div>
+          <div class="muc-sothich travel">
+            <i class="fas fa-plane"></i>
+            <p>Du lịch</p>
+          </div>
+        </div>
+      </section>
+      
+    <section id="duan" class="phan duan an">
+        <h2 class="tieude">DỰ ÁN</h2>
+        <div class="ds-duan">
+      
+          <div class="duan-item">
+            <div class="overlay">
+                <img src="images/project1.png" alt="Dự án 1">
+                <h3>Phần mềm đặt cà phê</h3>
+                <p>Thiết kế website phần mềm đặt cà phê online với giao diện thân thiện .</p>
+                <a href="#">Xem Chi Tiết</a>
+            </div>
+          </div>
+      
+          <div class="duan-item">
+            <div class="overlay">
+                <img src="images/project2.png" alt="Dự án 2">
+                <h3>Website bán Cafe</h3>
+                <p>Thiết kế website bán cafe với giao diện thân thiện. Sử dụng JavaScript (Strapi) (FullStack).</p>
+                <a href="#">Xem Chi Tiết</a>
+            </div>
+          </div>
+      
+          <div class="duan-item">
+            <div class="overlay">
+                <img src="images/project3.png" alt="Dự án 3">
+                <h3>Website đồ ăn vặt</h3>
+                <p>Thiết kế website đồ ăn vặt với giao diện thân thiện, dễ sử dụng (Ngôn ngữ PHP - FullStack).</p>
+                <a href="#">Xem Chi Tiết</a>
+            </div>
+          </div>
+      
+          <div class="duan-item">
+            <div class="overlay">
+                <img src="images/project4.png" alt="Dự án 4">
+                <h3>Website bán quần áo</h3>
+                <p>Thiết kế website bán quần áo với giao diện thân thiện, dễ sử dụng (Laravel - FullStack).</p>
+                <a href="#">Xem Chi Tiết</a>
             </div>
           </div>
         </div>
-
-        <div class="career_goals" id="career_goals">
-          <h3>Mục tiêu nghề nghiệp</h3>
-          <p>
-            Mục tiêu của tôi là trở thành một nhà phát triển full-stack đa năng
-            với kỹ năng thiết kế UX/UI mạnh mẽ. Tôi muốn làm việc trên các ứng
-            dụng sáng tạo, lấy người dùng làm trung tâm giải quyết các vấn đề
-            thực tế và mang lại trải nghiệm thú vị cho người dùng.
-          </p>
-        </div>
-
-        <div class="personal_interests" id="interests">
-          <h3>Sở thích</h3>
-          <p>
-            Ngoài việc lập trình, tôi thích nghệ thuật số, khám phá các xu hướng
-            thiết kế mới, tôi còn chới đá bóng, cầu lông giúp tôi cân bằng logic, sự sáng tạo với sức khoẻ trong công
-            việc.
-          </p>
-        </div>
-
-        <div class="language" id="language">
-          <h3>Ngôn ngữ</h3>
-          <ul>
-            <li>English</li>
-            <li>Vietnamese</li>
-          </ul>
-        </div>
-
-        <div class="skills" id="skills">
-          <h3>Kĩ năng</h3>
-
-          <div class="skill_item">
-            <span>HTML & CSS</span>
-            <div class="skill_bar">
-              <div class="skill_fill" style="width: 50%">50%</div>
+      </section>  
+      <section id="lienhe" class="phan lienhe an">
+        <h2 class="tieude">LIÊN HỆ</h2>
+      
+        <div class="lienhe-container">
+          <div class="tt-lienhe">
+            <p><i class="fas fa-map-marker-alt"></i> TP.HCM, Việt Nam</p>
+            <p><i class="fas fa-phone"></i> 0343 013 473</p>
+            <p><i class="fas fa-envelope"></i> datbuithanh1711@gamil.com</p>
+      
+            <div class="mang-xa-hoi">
+              <a href="https://www.facebook.com/dat.buithanh.355/?locale=vi_VN"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://github.com/Datbui1711"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/thanhdatt1705/"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
-
-          <div class="skill_item">
-            <span>ReactJS / NextJS</span>
-            <div class="skill_bar">
-              <div class="skill_fill" style="width: 65%">65%</div>
-            </div>
+      
+          <form class="form-lienhe">
+            <input type="text" placeholder="Họ và tên" required />
+            <input type="email" placeholder="Email" required />
+            <textarea rows="5" placeholder="Nội dung liên hệ..." required></textarea>
+            <button type="submit">Gửi</button>
+          </form>
+        </div>
+      </section>
+      <footer class="chantrang">
+        <div class="noidung-chantrang">
+          <p>&copy; 2025 Bùi Thành Đạt. All rights reserved.</p>
+          <div class="mang-xa-hoi">
+            <a href="https://www.facebook.com/dat.buithanh.355/?locale=vi_VN"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://github.com/Datbui1711"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/thanhdatt1705/"><i class="fab fa-instagram"></i></a>
           </div>
-
-          <div class="skill_item">
-            <span>Git & GitHub</span>
-            <div class="skill_bar">
-              <div class="skill_fill" style="width: 60%">60%</div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
+      </footer>
+</body>
 
-    <div class="projects_section">
-      <div class="projects_content">
-        <div class="project">
-          <h3>Dự án</h3>
-          <ul>
-            <li>Dự án làm web CV (hoàn thành)</li>
-            <li>Ứng dụng web hiệu thuốc trực tuyến (đang thực hiện)</li>
-            <li>Koi Show Management System (hoàn thành)</li>
-          </ul>
-        </div>
-
-        <div class="certificates_and_awards" id="certificates">
-          <h3>Chứng chỉ và giải thưởng</h3>
-          <ul>
-            <li>Chứng chỉ tin học MOS</li>
-            <li>Chứng chỉ Toiec(650)</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="contact_section" id="contact">
-      <div class="contact_content">
-        <div class="contact">
-          <h3>Liên hệ</h3>
-          <ul>
-            <li>
-              <a
-                href="https://github.com/Datbui1711"
-                target="_blank"
-                class="icon github"
-              >
-                <ion-icon name="logo-github"></ion-icon> GitHub
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/dat.buithanh.355"
-                target="_blank"
-                class="icon facebook"
-              >
-                <ion-icon name="logo-facebook"></ion-icon> Facebook
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/thanhdatt1705/"
-                target="_blank"
-                class="icon instagram"
-              >
-                <ion-icon name="logo-instagram"></ion-icon> Instagram
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <!-- Các script trên dùng để thêm biểu tượng mạng xã hội từ Ionicons -->
-  </body>
 </html>
